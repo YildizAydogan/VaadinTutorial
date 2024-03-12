@@ -14,13 +14,9 @@ import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 import jakarta.annotation.security.PermitAll;
 
-import java.util.Collections;
-
-
-
+@PermitAll
 @PageTitle("Contacts | Vaadin CRM")
 @Route(value = "", layout = MainLayout.class)
-@PermitAll
 public class ListView extends VerticalLayout {
     private  CrmService service;
     Grid<Contact> grid = new Grid<>(Contact.class);

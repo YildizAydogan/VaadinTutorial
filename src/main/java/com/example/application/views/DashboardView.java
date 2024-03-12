@@ -12,10 +12,9 @@ import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 import jakarta.annotation.security.PermitAll;
 
-
+@PermitAll
 @Route(value = "dashboard", layout = MainLayout.class)
 @PageTitle("Dashboard | CRM")
-@PermitAll
 public class DashboardView extends VerticalLayout {
     private final CrmService service;
 
